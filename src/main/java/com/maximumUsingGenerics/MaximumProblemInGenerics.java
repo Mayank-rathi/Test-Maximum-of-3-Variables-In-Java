@@ -1,12 +1,21 @@
 package com.maximumUsingGenerics;
 
 public class MaximumProblemInGenerics {
-    public static Integer MaximumumnumberFinder(Integer first, Integer second, Integer third) {
+    public static Integer MaximumumnumberFinderInInteger(Integer first, Integer second, Integer third) {
         Integer maxNum = first;
-        if (maxNum.compareTo( maxNum=second) > 0)
-            maxNum=second;
-        else if (maxNum.compareTo(maxNum=third) > 0)
-            maxNum=third;
+        if (maxNum.compareTo(second) < 0)
+            maxNum = second;
+        if (maxNum.compareTo(third) < 0)
+            maxNum = third;
+        return maxNum;
+    }
+
+    public static Float MaximumumnumberFinderInFloat(Float first, Float second, Float third) {
+        Float maxNum = first;
+        if (maxNum.compareTo(second) < 0)
+            maxNum = second;
+        if (maxNum.compareTo(third) < 0)
+            maxNum = third;
         return maxNum;
     }
 }
