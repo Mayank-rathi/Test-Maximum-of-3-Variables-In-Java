@@ -28,7 +28,9 @@ public class MaximumProblemInGenerics<M extends Comparable<M>> {
                 maxNum = optional[0];
             }
         }
+        System.out.println("Maximum value is: " + maxNum);
         return maxNum;
+
     }
 
     public M MaximumumnumberFinder(M... optional) {
