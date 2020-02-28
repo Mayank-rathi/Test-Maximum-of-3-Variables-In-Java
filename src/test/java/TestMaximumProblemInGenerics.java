@@ -45,6 +45,25 @@ public class TestMaximumProblemInGenerics {
     @Test
     public void findThirdMaximumNumber_IfCorrect_ShouldReturn_PassTest_InFloat() {
         Float finder = maximumnumber.MaximumumnumberFinderInFloat(10.2f, 20.2f, 50.3f);
-        Assert.assertEquals((Float) 50.3f, finder,0.0f);
+        Assert.assertEquals((Float) 50.3f, finder, 0.0f);
+    }
+
+    @Test
+    public void findFirstMaximumNumber_IfCorrect_Shouldreturn_PassTest_InString() {
+        String finder = maximumnumber.MaximumumnumberFinderInString("Peach", "Apple", "Banana");
+        Assert.assertEquals((String) "Peach", finder);
+    }
+
+    @Test
+    public void findSecondMaximumNumber_IfCorrect_ShouldReturn_PassTest_InString() {
+        String finder = maximumnumber.MaximumumnumberFinderInString("Apple", "Peach", "Banana");
+        Assert.assertEquals((String) "Peach", finder);
+
+    }
+
+    @Test
+    public void findThirdMaximumNumber_IfCorrect_ShouldReturn_PassTest_InString() {
+        String finder = maximumnumber.MaximumumnumberFinderInString("Apple", "Banana", "Peach");
+        Assert.assertEquals((String) "Peach", finder);
     }
 }

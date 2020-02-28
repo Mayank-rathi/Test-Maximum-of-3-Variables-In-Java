@@ -18,4 +18,13 @@ public class MaximumProblemInGenerics {
             maxNum = third;
         return maxNum;
     }
+
+    public static String MaximumumnumberFinderInString(String first, String second, String third) {
+        String maxNum = first;
+        if (maxNum.compareTo(second) < 0)
+            maxNum = second;
+        if (maxNum.compareTo(third) < 0)
+            maxNum = third;
+        return maxNum;
+    }
 }
