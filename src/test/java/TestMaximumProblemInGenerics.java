@@ -69,4 +69,26 @@ public class TestMaximumProblemInGenerics {
         Comparable maxNumberFinder = maxFinder.MaximumumnumberFinder();
         Assert.assertEquals("Peach", maxNumberFinder);
     }
+
+    @Test
+    public void findThirdMaximumNumberExtraOption_IfCorrect_ShouldReturn_PassTest() {
+        MaximumProblemInGenerics maxFinder = new MaximumProblemInGenerics(10.2f, 20.2f, 50.3f);
+        Comparable maxNumberFinder = maxFinder.MaximumumnumberFinder(11.4f, 100.1f);
+        Assert.assertEquals(100.1f, (Float) maxNumberFinder, 0.0f);
+    }
+
+    @Test
+    public void findThirdMaximumNumberUsingExtraOption_IfCorrect_ShouldReturn_PassTest() {
+        MaximumProblemInGenerics maxFinder = new MaximumProblemInGenerics("Apple", "Banana", "Peach");
+        Comparable maxNumberFinder = maxFinder.MaximumumnumberFinder("Mayank", "rathi");
+        Assert.assertEquals("rathi", maxNumberFinder);
+    }
+
+    @Test
+    public void findThirdMaximumIntegerNumberUsingExtraOption_IfCorrect_ShouldReturn_PassTest() {
+        MaximumProblemInGenerics maxFinder = new MaximumProblemInGenerics(10, 20, 30);
+        Comparable maxNumberFinder = maxFinder.MaximumumnumberFinder(5, 100);
+        Assert.assertEquals(100, maxNumberFinder);
+
+    }
 }
